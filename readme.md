@@ -1,5 +1,4 @@
 # [Stanford drone dataset](http://cvgl.stanford.edu/projects/uav_data/):
-----------------------------------------------------------------------------
 Each line in the annotations.txt file corresponds to an annotation. Each line contains 10+ columns, separated by spaces. The definition of these columns are:
 
     1   Track ID. All rows with the same ID belong to the same path.
@@ -22,8 +21,8 @@ Each line in the annotations.txt file corresponds to an annotation. Each line co
 
     10  label. The label for this annotation, enclosed in quotation marks.
 
-# [kitti](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection):
-Values    Name      Description
+# [Kitti format](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection):
+Values          Name        Description
 ----------------------------------------------------------------------------
    1    type         Describes the type of object: 'Car', 'Van', 'Truck',
                      'Pedestrian', 'Person_sitting', 'Cyclist', 'Tram',
@@ -50,12 +49,16 @@ Values    Name      Description
    1    score        Only for results: Float, indicating confidence in
                      detection, needed for p/r curves, higher is better.
 # Mapping between the two:
-----------------------------------------------------------------------------
 sdd -> kitti : Name
+
 10  -> 1        label(type)
+
 2:5 -> 5:8      axis
+
 7(if 1) -> 3(3) occluded(outside the screen)
+
 8(if 1) -> 3(1) occluded(partly occluded)
+
 7,8(if 0)->3(0) occluded(fully visible)
 
 
