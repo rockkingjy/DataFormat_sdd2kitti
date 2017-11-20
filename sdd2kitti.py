@@ -1,12 +1,9 @@
-
 import cv2
 import os
 import glob
 
-
-
 originalfolder = "/home/rk/Amy/data/stanford_campus_dataset/annotations/"
-destinationfolder = "/home/rk/Amy/data/stanford_campus_dataset/annotationskitti/"
+destinationfolder = "/home/rk/Amy/data/stanford_campus_dataset_kitti/"
 
 # convert txt file from stanford drone dataset to kitti format
 def ssd2kitti(ori,des):
@@ -71,6 +68,5 @@ for i in range(len(glob.glob(originalfolder+"*"))):
         print "Now proceeding " + subsubfolder[j]
         ssd2kitti(originalfolder+subfolder[i]+"/"+subsubfolder[j]+"/"+"annotations.txt", 
             destinationfolder+subfolder[i]+"/"+subsubfolder[j]+"/")
-
 
 

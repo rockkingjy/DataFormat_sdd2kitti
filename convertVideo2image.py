@@ -3,7 +3,7 @@ import os
 import glob
 
 originalfolder = "/home/rk/Amy/data/stanford_campus_dataset/videos/"
-destinationfolder = "/home/rk/Amy/data/stanford_campus_dataset/videosframes/"
+destinationfolder = "/home/rk/Amy/data/stanford_campus_dataset_kitti/"
 
 # convert video to image
 def video2image(ori,des):
@@ -14,7 +14,7 @@ def video2image(ori,des):
     while success:
         success,image = vidcap.read()
         print 'Read a new frame: ', success, 'count:', count
-        cv2.imwrite(des + "%d.jpg" % count, image)     # save frame as JPEG file
+        cv2.imwrite(des + "%d.png" % count, image)     # save frame as PNG file
         count += 1
 
 # create the destination folder if not exist
