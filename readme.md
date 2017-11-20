@@ -52,13 +52,9 @@ Values      |    Name     |   Description
 sdd     |    kitti |    Name
 --- | --- | ---
 10  | 1    |    label(type)
-
 2:5 | 5:8  |    axis
-
 7(if 1) | 3(3) | occluded(outside the screen)
-
 8(if 1) | 3(1) | occluded(partly occluded)
-
 7,8(if 0) | 3(0) | occluded(fully visible)
 
 
