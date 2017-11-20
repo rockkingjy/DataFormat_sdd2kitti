@@ -50,16 +50,16 @@ Values      |    Name     |   Description
                      detection, needed for p/r curves, higher is better.
 # Mapping between the two:
 sdd     |    kitti |    Name
+--- | --- | ---
+10  | 1    |    label(type)
 
-10  -> 1        label(type)
+2:5 | 5:8  |    axis
 
-2:5 -> 5:8      axis
+7(if 1) | 3(3) | occluded(outside the screen)
 
-7(if 1) -> 3(3) occluded(outside the screen)
+8(if 1) | 3(1) | occluded(partly occluded)
 
-8(if 1) -> 3(1) occluded(partly occluded)
-
-7,8(if 0)->3(0) occluded(fully visible)
+7,8(if 0) | 3(0) | occluded(fully visible)
 
 
 # Running
