@@ -22,7 +22,7 @@ Each line in the annotations.txt file corresponds to an annotation. Each line co
     10  label. The label for this annotation, enclosed in quotation marks.
 
 # [Kitti format](https://github.com/NVIDIA/DIGITS/tree/master/digits/extensions/data/objectDetection):
-Values          Name        Description
+Values      |    Name     |   Description
 ----------------------------------------------------------------------------
    1    type         Describes the type of object: 'Car', 'Van', 'Truck',
                      'Pedestrian', 'Person_sitting', 'Cyclist', 'Tram',
@@ -49,7 +49,7 @@ Values          Name        Description
    1    score        Only for results: Float, indicating confidence in
                      detection, needed for p/r curves, higher is better.
 # Mapping between the two:
-sdd -> kitti : Name
+sdd     |    kitti |    Name
 
 10  -> 1        label(type)
 
