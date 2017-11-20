@@ -41,13 +41,13 @@ sdd     |    kitti |    Name
 
     Change the "originalfolder" to the path: <your_standford_drone_dataset>/videos/
 
-    Change the "destinationfolder" to the path: <your_standford_drone_dataset>/videosframes/
+    Change the "destinationfolder" to the path: <your_destinationfloder>
 
 2. In ssd2kitti.py:
 
     Change the "originalfolder" to the path: <your_standford_drone_dataset>/annotations/
 
-    Change the "destinationfolder" to the path: <your_standford_drone_dataset>/annotationskitti/
+    Change the "destinationfolder" to the path: <your_destinationfloder>
 
 3. Run the two python scripts
 
